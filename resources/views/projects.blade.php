@@ -28,6 +28,17 @@
         </div>
     </header>
 
+    <!-- Projects Section -->
+    <section class="projects-section"> 
+        <div>
+            <h2 class="project-title">MY PROJECTS</h2>
+        </div>
+            
+        </div>
+
+
+    </section>
+
 
 
 </body>

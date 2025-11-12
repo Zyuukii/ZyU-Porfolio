@@ -37,3 +37,9 @@ ul {
     color: #007BFF;
     transform: scale(1.1);
 }
+
+.project-title{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+}

@@ -41,7 +41,7 @@
 
         <div class="links">
             
-                <a href="projects" class="btn">View My Projects</a> 
+                <a href="/projects" class="btn">View My Projects</a> 
 
             <div class="social-links">
                 <a class="fb" href="https://www.facebook.com/zyuzyuuu" target="facebook.com">

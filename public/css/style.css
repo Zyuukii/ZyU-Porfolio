@@ -1,0 +1,100 @@
+body {
+    background-image: linear-gradient(white, #1177FF);
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    font-size: 25px;
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin-right: 50px;
+    
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.nav-bar {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.nav-bar a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    padding: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-bar a:hover {
+    color: #007BFF;
+    transform: scale(1.1);
+}
+
+.greetings {
+    margin-top: 8%;
+    font-size: 25px;
+    text-align: left;
+    margin-inline: 50px;
+    letter-spacing: 1px;
+}
+
+
+.container p{
+    max-width: 700px;
+    font-size: 30px;
+   
+}
+
+.front{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+.btn {
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    border: black solid 2px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1177FF;
+    transform: scale(1.1);
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+
+}  
+
+.social-links img {
+    width: 40px;
+    height: auto;
+    flex-direction: row;
+    transition: transform 0.2s;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}

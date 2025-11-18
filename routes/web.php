@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('/home');
-}); #default
+}); #default landing page
 
 
 #Route::view('home', 'home'); #this is my first project

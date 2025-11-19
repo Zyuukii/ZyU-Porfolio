@@ -1,9 +1,9 @@
 @include('components.header')
 
-<form action="{{ route('register') }}" method="POST">  
+<form action="{{ route('register')}}" method="POST">
     @csrf
     <label>Name</label>
-    <input type="text" name="full_name" placeholder="Full name">
+    <input type="text" name="name" placeholder="Full name">
     <label>Email</label>
     <input type="email" name="email" placeholder="Email">
     <label>Password</label>

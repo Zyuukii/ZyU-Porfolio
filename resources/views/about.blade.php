@@ -37,7 +37,7 @@
             </p>
             
             <p>
-                I’m currently learning React to enhance my ability to create dynamic 
+                I’m currently learning _____ to enhance my ability to create dynamic 
                 and reusable components, and exploring UI/UX design to better 
                 understand how users interact with interfaces.
             </p>

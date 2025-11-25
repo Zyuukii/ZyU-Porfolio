@@ -20,3 +20,4 @@ Route::post('/logout', function () {
 Route::view('home', 'home'); #this is my first project
 Route::view('about', 'about'); #this is my second project
 Route::view('projects', 'projects'); #this is my third project
+Route::view('contact', 'contact'); #this is my fourth project

@@ -90,12 +90,34 @@ ul a:hover::after {
     font-weight: bold;
     padding: 10px 20px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1177FF;
+    z-index: -1;
+    transition: width 0.3s ease;
+    border-radius: inherit;
+    
 }
 
 .btn:hover {
-    background-color: #1177FF;
+    color: black;
     transform: scale(1.1);
 }
+
+.btn:hover::before   {
+    width: 100%;
+}
+
 
 .social-links {
     margin-top: 20px;

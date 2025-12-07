@@ -1,7 +1,7 @@
 @include('components.header', ['pageCss' => 'design.css'])
 
 
-<form action="{{ route('login') }}" method="POST" class="form">
+<form action="{{ route('login.submit') }}" method="POST" class="form">
     @csrf
 
     <div>
@@ -25,7 +25,19 @@
         </div>
 
         <button class="submit" type="submit">Submit</button>
+        
+        @if ($errors->any())
+            <div class="errors">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li class="alert" role="alert">{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
     </div>
 </form>
+
+
 
 @include('components.footer')

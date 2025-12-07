@@ -30,7 +30,18 @@ class AuthController extends Controller
 
         return redirect()->route('login.form')->with('success','Registration successful');
     }
-    function login(Request $request){
+    function performLogin(Request $request){
+
+        $credentials = $request->only('email', 'password');
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect()->intended('dashboard');
+        }
+
+        return back()->withErrors([
+            'email' => 'The provided credentials do not match our records.',
+        ])->onlyInput('email');
 
     }
 }

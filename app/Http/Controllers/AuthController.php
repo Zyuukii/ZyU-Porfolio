@@ -44,4 +44,11 @@ class AuthController extends Controller
         ])->onlyInput('email');
 
     }
+    function logout(Request $request){
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('home');
+    }
+
 }

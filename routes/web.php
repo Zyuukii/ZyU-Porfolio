@@ -12,9 +12,7 @@ Route::post('/register',[AuthController::class, 'Register'])->name('register');
 Route::get('/login',[AuthController::class, 'showLogin'])->name('login');
 Route::post('/login',[AuthController::class, 'performLogin'])->name('login.submit');
 
-Route::post('/logout', function () {
-
-});
+Route::post('/logut',[AuthController::class,'logout'])->name('logout');
 
 
 Route::view('home', 'home'); #this is my first project

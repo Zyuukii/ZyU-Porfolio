@@ -60,7 +60,69 @@ ul a:hover::after {
     text-align: center;
     font-size: 40px;
     margin-top: 20px;
+    
 }
+
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.project-card1, .project-card2, .project-card3, .project-card4 {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  height: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+
+.focus-card {
+  transition: transform 0.3s ease,
+  box-shadow 0.3s ease,
+  filter 0.3s ease,
+  opacity 0.3s ease;
+}
+
+.projects:hover .focus-card {
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.projects .focus-card:hover {
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(1.05) translateY(-8px);
+  z-index: 10;
+}
+
+.project-name {
+   transition: all 0.3s ease;
+}
+
+.focus-card:hover .project-name {
+    transform: scale(1.1);
+    letter-spacing: 3px;
+}
+
+.project-description {
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.focus-card:hover .project-description {
+    transform: translateY(3px);
+    opacity: 1;
+}
+
+
+
 
 @keyframes gradient {
     0%{background-position:0% 50%}

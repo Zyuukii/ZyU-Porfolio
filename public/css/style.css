@@ -3,6 +3,7 @@ body {
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 ul {
@@ -56,10 +57,11 @@ ul a:hover::after {
 }
 
 .greetings {
+    display: flex;
     margin-top: 8%;
     font-size: 25px;
     text-align: left;
-    margin-inline: 70px;
+    margin-inline: 4rem;
     letter-spacing: 1px;
 }
 
@@ -130,12 +132,46 @@ ul a:hover::after {
 .social-links img {
     width: 40px;
     height: auto;
-    flex-direction: row;
-    transition: transform 0.2s;
+    transition: transform 0.2s ease;
+    
 }
 
 .social-links img:hover {
     transform: scale(1.1);
+}
+
+.home-image-container {
+  max-width: 450px;
+  margin-left: 300px; 
+}
+
+.home-image {
+    max-width: 450px;
+    width: 100%;  
+    height: auto;  
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+    transition: all 0.5s ease;
+    animation: pulse 2s infinite;
+}
+
+.home-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    50% {
+        box-shadow: 0 0 50px rgba(0,0,0,0.6);
+    }
+    100% {     
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
 }
 
 @keyframes gradient {

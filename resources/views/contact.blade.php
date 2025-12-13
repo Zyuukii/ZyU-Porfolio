@@ -49,7 +49,7 @@
 
         <label>
             <span>Message</span>
-            <textarea placeholder="Binibining Joana Wowerzs" type="text" class="input" row = "5"></textarea>
+            <textarea placeholder="Message" type="text" class="input" row = "5"></textarea>
         </label>
 
         <button class="submit">Submit</button>
